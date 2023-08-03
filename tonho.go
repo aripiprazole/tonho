@@ -1,4 +1,4 @@
-package main
+package tonho
 
 func main() {
 	println("Hello world")
