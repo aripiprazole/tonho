@@ -1,7 +1,16 @@
 package tonho
 
 type Event interface {
+	Event()
 }
+
+type OpenEvent struct {
+	Kind int
+}
+
+type CloseEvent struct{}
+
+type AdvanceEvent struct{}
 
 // Parser is a struct that contains the state of the parser.
 //
